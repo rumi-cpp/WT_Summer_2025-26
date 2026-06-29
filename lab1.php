@@ -1,96 +1,89 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>ElectroMart - Product Catalogue</title>
-    <meta name="author" content="Irfan Ahmed">
-    <meta name="description" content="ElectroMart Product Catalogue">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Service Portal</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <nav>
-        <a href="#">Home</a> |
-        <a href="#">Products</a> |
-        <a href="#">Contact</a>
-    </nav>
+<header>
+    <h1>Student Service Portal</h1>
+    <p>Submit your academic service requests easily.</p>
+</header>
 
-    <hr>
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+</nav>
 
-    <header>
-        <h2>ElectroMart Product Catalogue</h2>
-    </header>
+<main>
 
-    <main>
+<section class="description">
+    <h2>Available Services</h2>
 
-        <fieldset>
-            <legend>Available Products</legend>
+    <p>
+        Students can request Transcript,
+        ID Card, Certificate,
+        and General Inquiry services using this portal.
+    </p>
 
-            <table border="1">
+</section>
 
-                <tr>
-                    <th>Image</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                    <th>Price</th>
-                    <th>Action</th>
-                </tr>
+<section class="form-section">
 
-                <tr>
-                    <td><img src="https://via.placeholder.com/80"></td>
-                    <td><b>Smartphone Pro X</b></td>
-                    <td>6.5-inch display, 128GB storage, 5000mAh battery</td>
-                    <td>$499</td>
-                    <td><a href="#">Buy Now</a></td>
-                </tr>
+<h2>Service Request Form</h2>
 
-                <tr>
-                    <td><img src="https://via.placeholder.com/80"></td>
-                    <td><b>Laptop Ultra</b></td>
-                    <td>Intel i7, 16GB RAM, 512GB SSD</td>
-                    <td>$899</td>
-                    <td><a href="#">Buy Now</a></td>
-                </tr>
+<form>
 
-                <tr>
-                    <td><img src="https://via.placeholder.com/80"></td>
-                    <td><b>Smart Watch</b></td>
-                    <td>Heart rate, GPS, 7-day battery</td>
-                    <td>$199</td>
-                    <td><a href="#">Buy Now</a></td>
-                </tr>
+<label>Student Name</label>
+<input type="text" required>
 
-                <tr>
-                    <td><img src="https://via.placeholder.com/80"></td>
-                    <td><b>Bluetooth Speaker</b></td>
-                    <td>Deep bass, waterproof, 12-hour play</td>
-                    <td>$79</td>
-                    <td><a href="#">Buy Now</a></td>
-                </tr>
+<label>Student ID</label>
+<input type="text" maxlength="10" required>
 
-                <tr>
-                    <td><img src="https://via.placeholder.com/80"></td>
-                    <td><b>Tablet Air</b></td>
-                    <td>10-inch display, 64GB storage</td>
-                    <td>$299</td>
-                    <td><a href="#">Buy Now</a></td>
-                </tr>
+<label>Email</label>
+<input type="email" required>
 
-            </table>
+<label>Service Type</label>
 
-            <br>
+<select>
 
-            <b>Total Products: 5</b>
+<option>Transcript Request</option>
+<option>ID Card Issue</option>
+<option>General Inquiry</option>
 
-        </fieldset>
+</select>
 
-    </main>
+<label>Urgency Level</label>
 
-    <hr>
+<input type="radio" name="urgency"> Low
+<input type="radio" name="urgency"> Medium
+<input type="radio" name="urgency"> High
 
-    <footer>
-        <p>&copy; 2026 ElectroMart</p>
-        <p>Contact: electromart@gmail.com</p>
-    </footer>
+<br><br>
+
+<label>Additional Details</label>
+
+<textarea rows="5"></textarea>
+
+<input type="submit" value="Submit">
+
+</form>
+
+</section>
+
+</main>
+
+<footer>
+
+<p>© 2026 Student Service Portal. All Rights Reserved.</p>
+
+</footer>
 
 </body>
 </html>
